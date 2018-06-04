@@ -1,0 +1,230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1827534332521332}
+  m_IsPrefabParent: 1
+--- !u!1 &1827534332521332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4592821124665258}
+  - component: {fileID: 120624681781544102}
+  - component: {fileID: 68748967972283222}
+  - component: {fileID: 114502330526594290}
+  - component: {fileID: 50689838821732138}
+  m_Layer: 8
+  m_Name: Line (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4592821124665258
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1827534332521332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.77, y: -13.42, z: -0.055038646}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50689838821732138
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1827534332521332}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 100
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!68 &68748967972283222
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1827534332521332}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.622675, y: -0.35015678}
+  - {x: -2.1024148, y: -0.34653085}
+  - {x: -1.6306846, y: -0.32337663}
+  - {x: -1.2042317, y: -0.28211573}
+  - {x: -0.8198019, y: -0.22416961}
+  - {x: -0.47414273, y: -0.15095997}
+  - {x: -0.16400081, y: -0.06390835}
+  - {x: 0.1138768, y: 0.035563678}
+  - {x: 0.36274338, y: 0.14603448}
+  - {x: 0.585852, y: 0.26608247}
+  - {x: 0.7864561, y: 0.39428616}
+  - {x: 0.9678085, y: 0.5292239}
+  - {x: 1.1331625, y: 0.669474}
+  - {x: 1.2857709, y: 0.81361496}
+  - {x: 1.4288875, y: 0.9602254}
+  - {x: 1.5657649, y: 1.1078835}
+  - {x: 1.6996567, y: 1.2551677}
+  - {x: 1.8338157, y: 1.4006565}
+  - {x: 1.9714948, y: 1.5429279}
+  - {x: 2.115948, y: 1.680561}
+  - {x: 2.2704277, y: 1.8121338}
+--- !u!114 &114502330526594290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1827534332521332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f15c84628abb545a9b0f1e3a406eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlPoints:
+  - {x: -2.622675, y: -0.35015678}
+  - {x: 2.2704277, y: 1.8121338}
+  handlerPoints:
+  - {x: 1.0147209, y: -0.39423752}
+  - {x: 1.1999111, y: 0.9583416}
+  smoothness: 20
+  initialized: 1
+  continous: 1
+  edge: {fileID: 68748967972283222}
+  line: {fileID: 120624681781544102}
+--- !u!120 &120624681781544102
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1827534332521332}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 70aa78c4aa81a764ca592441c1b86832, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: -2.622675, y: -0.35015678, z: 0}
+  - {x: -2.1024148, y: -0.34653085, z: 0}
+  - {x: -1.6306846, y: -0.32337663, z: 0}
+  - {x: -1.2042317, y: -0.28211573, z: 0}
+  - {x: -0.8198019, y: -0.22416961, z: 0}
+  - {x: -0.47414273, y: -0.15095997, z: 0}
+  - {x: -0.16400081, y: -0.06390835, z: 0}
+  - {x: 0.1138768, y: 0.035563678, z: 0}
+  - {x: 0.36274338, y: 0.14603448, z: 0}
+  - {x: 0.585852, y: 0.26608247, z: 0}
+  - {x: 0.7864561, y: 0.39428616, z: 0}
+  - {x: 0.9678085, y: 0.5292239, z: 0}
+  - {x: 1.1331625, y: 0.669474, z: 0}
+  - {x: 1.2857709, y: 0.81361496, z: 0}
+  - {x: 1.4288875, y: 0.9602254, z: 0}
+  - {x: 1.5657649, y: 1.1078835, z: 0}
+  - {x: 1.6996567, y: 1.2551677, z: 0}
+  - {x: 1.8338157, y: 1.4006565, z: 0}
+  - {x: 1.9714948, y: 1.5429279, z: 0}
+  - {x: 2.115948, y: 1.680561, z: 0}
+  - {x: 2.2704277, y: 1.8121338, z: 0}
+  m_Parameters:
+    serializedVersion: 2
+    widthMultiplier: 0.17
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
+      key3: {r: 0.08235294, g: 0.08235294, b: 0.08235294, a: 0.2901961}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 19853
+      ctime3: 65535
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 39321
+      atime3: 65535
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 10
+    alignment: 0
+    textureMode: 0
+    generateLightingData: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
